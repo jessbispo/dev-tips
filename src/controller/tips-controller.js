@@ -23,6 +23,6 @@ app.post('/create', (req, res) => {
 })
 
 }
-console.log(dicas))
+console.log(dicas)
 
 export default controller
