@@ -1,7 +1,6 @@
 // CRUD com nodejs: https://www.youtube.com/watch?v=hgFQgtsYG30
 
 import dicas from "../database/db.js";
-//app.use(express.json());
 
  const controller = (app) => {
 
@@ -14,6 +13,7 @@ app.post('/create', (req, res) => {
    
 });
 
+//retornando as dicas
     app.get('/tips', (req, res) => {
         const randomTip = dicas[Math.floor(Math.random() * dicas.lenght)]
         res.json({
@@ -23,6 +23,4 @@ app.post('/create', (req, res) => {
 })
 
 }
-console.log(dicas)
-
 export default controller
